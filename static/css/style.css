@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.input-field input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#analyze-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#analyze-btn:hover {
+  background-color: #555;
+}
+
+#loading-section {
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#results-section {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.chart-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+#final-suggestion {
+  clear: both;
+}
+.chart-suggestion-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.chart-container {
+  width: 400px;
+  height: 400px;
+}
+
+.final-suggestion {
+  display: block;
+  font-weight: bold;
+}
+#results-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-suggestion-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+}
+
+#final-suggestion-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
